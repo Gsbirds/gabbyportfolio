@@ -100,7 +100,7 @@ body {
 }
 
 .hidden-div span:nth-child(2):hover {
-  background:  #E2F0CB;
+  background: #FFB7B2;
   transform: translatey(-100px);
   -moz-transition: .50s ease-in-out;
   -o-transition: .50s ease-in-out;
@@ -132,7 +132,7 @@ body {
 }
 
 .hidden-div span:nth-child(4):hover {
-  background: #E2F0CB;
+  background: #FFB7B2;
   transform: translatey(-100px);
   -moz-transition: .50s ease-in-out;
   -o-transition: .50s ease-in-out;
