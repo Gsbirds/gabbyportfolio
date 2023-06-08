@@ -32,12 +32,11 @@ button{
 }
 
 .parallax{
-  /* background-image: url("/static/bit-cloud-3lqk4BQkCDw-unsplash.jpg"); */
+
   opacity: 0.9;
-  /* Set a specific height */
+
   min-height: 500px;
 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,12 +57,30 @@ body {
   padding-top: 3rem;
 }
 
+#intro {
+  padding: 2rem;
+  font-family: 'IBM Plex Mono', monospace;
+  border-radius: 30px;
+  background-color: #d8d6fa;
+  width: 1000px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  grid-column: 4/7;
+  margin:auto;
+  margin-bottom: 25rem;
+  margin-top: 3rem;
+
+}
+
+.bubbles{
+  margin:auto;
+}
+
 .hidden-div {
-  /* border: .2em solid #ff4136; */
   font-size: 3em;
   text-align: center;
   padding: .2em;
   color: #fff;
+  margin:auto;
 }
 
 .hidden-div span {
@@ -81,6 +98,7 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   /* border: 5px solid black; */
   transform: rotate(-4deg);
+  
 }
 
 .hidden-div span:nth-child(1):hover {
@@ -155,6 +173,7 @@ body {
   transition: .50s ease-in-out;
 }
 
+
 .header {
   font-size: 7rem;
   text-decoration: none;
@@ -165,7 +184,7 @@ body {
   padding-right: 200px;
   position: absolute;
   top: 200px;
-  left:1100px;
+  left:1200px;
   /* left:20px; */
   font-family: 'IBM Plex Mono', monospace;
   color: #fad6e5;
@@ -194,10 +213,6 @@ body {
   padding-right: 1rem;
 }
 
-.fullname{
-padding-top: 4rem;
-
-}
 .fa-solid,
 .fa-brands {
 color:black;
@@ -514,29 +529,67 @@ textarea {
 }
 
 
-@media (max-width: 1350px) {
-.header-first{
-  visibility:hidden;
-}
-.header {
-  font-size: 3rem;
-  visibility:hidden;
-}
-}
+  article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
 
-@media (max-width: 720px) {
+  #projects img{
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+
+  .text {
+    grid-column: 5/11;
+    grid-row: 1/2;
+    order: 2;
+    text-align: right;
+    /* padding-right: 2rem; */
+    color:#fad6e5;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+
+@media (max-width: 769px) {
   .header {
     font-size: 3rem;
     visibility:hidden;
   }
-/* 
-  #intro {
-    width: 300px;
-    margin-right: auto;
-    margin-left: auto;
-  } */
+  .header-first {
+    font-size: 3rem;
+    visibility:hidden;
+  }
 
+  article {
+    display: grid;
+    grid-template-columns: repeat(2), 1fr;
+  }
+
+  #projects img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+
+  .text {
+    grid-column: 1/2;
+    grid-row: 1/1;
+    order: 2;
+    /* text-align: right;
+    padding-right: 2rem; */
+    color:#fad6e5;
+  }
+
+  #intro{
+    width:400px;
+  }
+  
   #contact {
+    width: 300px;
+  }
+
+  #contact:hover {
     width: 300px;
   }
 
@@ -557,50 +610,27 @@ textarea {
     width: 300px;
     height: 300px;
   }
-}
-
-@media (min-width: 800px) {
-  /* #Me {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-
-  }
-  #intro {
-    grid-column: 1/6;
-    grid-row: 1/2;
-    width:50%;
-  } */
+  .parallax{
+    /* background-image: url("/static/bit-cloud-3lqk4BQkCDw-unsplash.jpg"); */
+    opacity: 0.9;
+    /* Set a specific height */
+    min-height: 500px;
   
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax{
+    background-image: url("./static/bit-cloud-3lqk4BQkCDw-unsplash.jpg");
+    opacity: 0.9;
+  }
+  
+}
   
 
-  .header{
-  text-align: right;
-  padding-right: 2rem;
-  }
-
-  article {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-  }
-
-  #projects img{
-    grid-column: 1/6;
-    grid-row: 1/2;
-  }
-
-  .text {
-    grid-column: 7/11;
-    grid-row: 1/2;
-    order: 2;
-    text-align: right;
-    padding-right: 2rem;
-    color:#fad6e5;
-  }
-
-  #projects ul {
-    justify-content: flex-end;
-  }
-}
 
 @media (min-width: 1200px) {
  .hidden-div{
@@ -609,43 +639,10 @@ textarea {
 }
 
 .projects{
-  width: 600%;
+  width: 500%;
   height: auto;
 }
 
-  #intro {
-    padding: 2rem;
-    /* border: 5px solid black; */
-    font-family: 'IBM Plex Mono', monospace;
-    border-radius: 30px;
-    background-color: #d8d6fa;
-    margin-top: 3rem;
-    width: 1000px;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    grid-column: 4/7;
-    margin-bottom: 25rem;
-
-  }
-
-  #intro:hover {
-    /* transform: rotate(2.5deg); */
-    padding: 2rem;
-    /* border: 5px solid black; */
-    border-radius: 30px;
-    background-color: #d8d6fa;
-    margin-top: 3rem;
- 
-    width: 1000px;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    grid-column: 4/7;
-
-  }
-
-  #Me {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-  }
- 
 .worked{
   padding-top: 4rem;
   color:#fad6e5;
