@@ -571,7 +571,7 @@ textarea {
     width:50%;
   } */
   
-  }
+  
 
   .header{
   text-align: right;
@@ -600,8 +600,8 @@ textarea {
   #projects ul {
     justify-content: flex-end;
   }
-
 }
+
 @media (min-width: 1200px) {
  .hidden-div{
   margin-left: 450px;
