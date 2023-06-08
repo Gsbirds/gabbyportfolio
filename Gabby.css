@@ -529,12 +529,12 @@ textarea {
     font-size: 3rem;
     visibility:hidden;
   }
-
+/* 
   #intro {
     width: 300px;
     margin-right: auto;
     margin-left: auto;
-  }
+  } */
 
   #contact {
     width: 300px;
@@ -560,13 +560,17 @@ textarea {
 }
 
 @media (min-width: 800px) {
-  #Me {
+  /* #Me {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+
   }
   #intro {
     grid-column: 1/6;
     grid-row: 1/2;
+    width:50%;
+  } */
+  
   }
 
   .header{
