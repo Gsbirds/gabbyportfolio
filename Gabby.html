@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Inconsolata&family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "css/Gabby.css" %}">
+  <title>Gabby Burgard</title>
+</head>
+
+
+
+
+<body class="parallax" >
+    <header>
+    <input type="checkbox" id="nav-menu1">
+    <label id="nav-icon1" for="nav-menu1">
+      <span>      <nav>
+        <ul class="navItems">
+
+          <li> <a href="#projects">Projects</a></li>
+          <li> <a href="#intro">About</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+
+          <li><a href="https://www.linkedin.com/in/gabby-burgard-14924abb/"><i
+                class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Gsbirds"><i
+                class="fa-brands fa-github"></i></a></li>
+          <li><button class="resume" href="https://frontendmasters.com/teachers/jen-kramer/"
+              target="_blank">Resume</button></i></li>
+        </ul>
+      </nav></span>
+
+
+    </label>
+  </header>
+  <div class="head-section">
+  <div class="fullname">
+
+    <span class="header-first"> Gabrielle</span>
+
+    <script src="https://kit.fontawesome.com/79acb8bbba.js" crossorigin="anonymous"></script>
+  </div>
+  <span class="hidden-div"><span>G</span><span>a</span><span>b</span><span>b</span><span>y</span></span>
+
+  <span class="header"> Burgard</span>
+
+  <div id="Me">
+
+  <div id="intro">
+    
+    <p class="name">Hi, my name is <span>Gabby.</i></span></p>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+      fugiat nulla pariatur. 
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+  </p>
+
+    </div>
+  
+  </div>
+</div>
+  <p> </p>
+
+  <h2 class="worked">Projects I've worked on</h2>
+
+  {% for projects in projects %}
+
+  <section class="section-blue">
+    <section id="projects">
+      <article>
+        <div class="text">
+          <h4>{{projects.title}}</h4>
+          <h3></h3>
+          <p class="blackbox">{{projects.description}}</p>
+          <h4>Technologies used include:</h4>
+          <ul>
+            <li>{{projects.languages}}</li>
+          </ul>
+        </div>
+        <div><img class="projects" src="{{projects.picture.url}}"/></div>
+      </article>
+    </section>
+
+  </section>
+{% endfor %}
+
+
+
+  <section id="contact">
+    <h2>Contact me</h2>
+    <p class="message">I'd love to hear your thoughts!</p>
+      <button class="contact_btn" type="button">
+        <a href="{% url 'contact' %}">Contact me!</a>
+    </button>
+  </section>
+
+  <footer>
+    <h1>Gabby Burgard <i id="heart" class="fa-solid fa-heart"></i> Fullstack Developer and Artist.</h1>
+
+    <p> <i class="fa-solid fa-copyright"></i><b> 2023 Gabrielle Burgard. All Rights Reserved.</b></p>
+  </footer>
+</body>
+
+</html>
