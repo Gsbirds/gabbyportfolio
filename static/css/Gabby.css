@@ -45,7 +45,7 @@ button{
 }
 
 .parallax{
-  background-image: url("./static/bit-cloud-3lqk4BQkCDw-unsplash.jpg");
+  background-image: url("/static/bit-cloud-3lqk4BQkCDw-unsplash.jpg");
   opacity: 0.9;
 }
 
