@@ -543,7 +543,37 @@ textarea {
     justify-content: flex-end;
   }
 
-@media (max-width: 769px) {
+@media (max-width:950px) {
+
+
+#nav-menu1:checked~#nav-icon1 span:nth-child(1) {
+  width:500px;
+  }
+
+  .hidden-div {
+    visibility: visible;
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: var(--mono);
+    /* text-align: center;
+    padding: 1rem; */
+    color: #fff;
+    margin:auto;
+   margin-left: 1rem; 
+  }
+  
+.hidden-div span {
+  /* display: inline-block; */
+  width: 90px;
+  /* padding: .8125rem;
+  margin: .5rem;
+  border-radius: 100px; */
+}
+
+#intro{
+  margin-left:1rem;
+}
+
   article {
     display: grid;
     grid-template-columns: repeat(2), 1fr;
