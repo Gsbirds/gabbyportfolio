@@ -233,6 +233,10 @@ color:black;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+.d-block{
+width:900px;
+}
+
 #projects img {
   margin: 2rem 0 4rem 0;
   padding: 1rem;
@@ -269,6 +273,7 @@ color:black;
 
 #projects img{
   background-color:#C7CEEA;
+  margin-left: 2rem;
 }
 #projects img:hover {
   background-color: pink;
@@ -536,7 +541,7 @@ textarea {
 
 
 #nav-menu1:checked~#nav-icon1 span:nth-child(1) {
-  width:460px;
+  width:480px;
   }
 
   .hidden-div {
@@ -622,7 +627,10 @@ textarea {
     background-image: url("./static/bit-cloud-3lqk4BQkCDw-unsplash.jpg");
     opacity: 0.9;
   }
-  
+
+  .d-block{
+    width:400px;
+    }
 }
 
 .worked{
