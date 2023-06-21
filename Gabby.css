@@ -531,43 +531,12 @@ textarea {
   #projects ul {
     justify-content: flex-end;
   }
-  #myCarousel{
-    width: 800px;
-   }
-   
-   #myCarousel1{
-     width: 800px;
-    }
-   
-    #myCarousel2{
-     width: 800px;
-    }
-   
-    #myCarousel3{
-     width: 800px;
-    }
       
 @media (max-width:950px) {
 
-  #myCarousel{
-    width: 400px;
-   }
-   
-   #myCarousel1{
-     width: 400px;
-    }
-   
-    #myCarousel2{
-     width: 400px;
-    }
-   
-    #myCarousel3{
-     width: 400px;
-    }
-      
 
 #nav-menu1:checked~#nav-icon1 span:nth-child(1) {
-  width:600px;
+  width:460px;
   }
 
   .hidden-div {
@@ -655,11 +624,6 @@ textarea {
   }
   
 }
-
-/* .projects{
-  width: 500%;
-  height: auto;
-}  */
 
 .worked{
   padding-top: 4rem;
