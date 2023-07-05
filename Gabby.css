@@ -536,9 +536,25 @@ textarea {
   #projects ul {
     justify-content: flex-end;
   }
-      
+
+  .inkpad{
+    width:500px;
+  }   
+  .inkpad2{
+    width:500px;
+  } 
+
+.fullstack{
+  margin-bottom: -70px;
+  margin-top: 50px;
+}
+
 @media (max-width:950px) {
 
+  .inkpad{
+    width:300px;
+  }    
+  
 
 #nav-menu1:checked~#nav-icon1 span:nth-child(1) {
   width:480px;
